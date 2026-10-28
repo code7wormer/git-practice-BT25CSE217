@@ -1,0 +1,11 @@
+$ git --version
+git version 2.55.0.windows.5
+
+$ git config user.name "Shardul Singh"
+$ git config user.email "shardulsingh.01@gmail.com"
+
+$ git config --get user.name
+Shardul Singh
+
+$ git config --get user.email
+shardulsingh.01@gmail.com
