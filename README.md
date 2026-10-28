@@ -11,7 +11,6 @@
 ---
 
 ## 1. Description of the Assignment
-This repository contains the complete practical implementation of the **Version Control Using Git** laboratory exercises for IT Workshop - I (CSP 201) at IIIT Nagpur. It demonstrates fundamental and advanced version control concepts including:
 - Repository setup, staging index, and atomic commits
 - Diffs between working directory, index, and HEAD
 - Ignoring untracked build artifacts and environment files via `.gitignore`
@@ -82,7 +81,7 @@ chmod +x menu.sh
 # Launch the interactive menu
 ./menu.sh
 ```
-**Menu Options Available:**
+**Options**
 1. **Greet User**: Prompts for a username and prints a personalized welcome message.
 2. **Add Two Integers**: Prompts for two integers, validates numeric input, and displays the arithmetic sum.
 3. **Check Even or Odd**: Prompts for an integer and reports whether it is even or odd.
@@ -90,7 +89,7 @@ chmod +x menu.sh
 
 ---
 
-## 4. Evidence of GitHub Activities
+## 4. Activities
 
 ### Issues Created
 - **Issue #1: Add input validation to greeting script**  
