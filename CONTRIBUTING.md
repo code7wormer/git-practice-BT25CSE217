@@ -17,3 +17,8 @@ Welcome to the **Git Version Control Lab** project! Please follow these standard
    - Ensure at least one peer review before merging.
 4. **Clean Code:**
    - Test all shell scripts using `bash <script_name>` before submission.
+
+## Peer Review Checklist (Exercise 14)
+- [x] Code tested locally in Git Bash
+- [x] Descriptive commit message provided
+- [x] No sensitive tokens or secrets committed
