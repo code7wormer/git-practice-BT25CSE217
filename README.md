@@ -100,13 +100,13 @@ chmod +x menu.sh
   *Description:* Requested a modular CLI menu offering greeting, addition, and even/odd parity checking. Completed via feature branch `feature/menu`.
 
 ### Pull Requests Created and Merged
-- **Pull Request #1: Feature: Interactive arithmetic and utility menu**  
-  *Link:* [https://github.com/code7wormer/git-practice-BT25CSE217/pull/1](https://github.com/code7wormer/git-practice-BT25CSE217/pull/1)  
-  *Source Branch:* `feature/menu` $\rightarrow$ *Target Branch:* `main`  
+- **Pull Request #3: Feature: Interactive arithmetic and utility menu test suite**  
+  *Link:* [https://github.com/code7wormer/git-practice-BT25CSE217/pull/3](https://github.com/code7wormer/git-practice-BT25CSE217/pull/3)  
+  *Source Branch:* `feature/menu-enhancement` $\rightarrow$ *Target Branch:* `main`  
   *Review:* Reviewed and merged with fast-forward strategy after verifying unit tests.
-- **Pull Request #2: Docs: Add project contribution guidelines**  
-  *Link:* [https://github.com/code7wormer/git-practice-BT25CSE217/pull/2](https://github.com/code7wormer/git-practice-BT25CSE217/pull/2)  
-  *Source Branch:* `feature/contributor-guide` $\rightarrow$ *Target Branch:* `main`  
+- **Pull Request #4: Docs: Add peer review checklist to contribution guidelines**  
+  *Link:* [https://github.com/code7wormer/git-practice-BT25CSE217/pull/4](https://github.com/code7wormer/git-practice-BT25CSE217/pull/4)  
+  *Source Branch:* `feature/collaboration-docs` $\rightarrow$ *Target Branch:* `main`  
   *Review:* Reviewed by peer collaborator, approved, and merged into `main`.
 
 ---
