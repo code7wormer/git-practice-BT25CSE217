@@ -1,0 +1,11 @@
+=== VS Code Source Control Operations Reference ===
++-----------------------+-----------------------------+----------------------------------------------+
+| VS Code UI Action     | Terminal Equivalent         | Effect                                       |
++-----------------------+-----------------------------+----------------------------------------------+
+| Click '+' icon        | git add <file>              | Stages modified content into index           |
+| Click '-' icon        | git restore --staged <file> | Unstages content while preserving disk edits |
+| Enter message & Ctrl+Enter | git commit -m "msg"     | Records staged changes into repository       |
+| Click file under Changes | git diff                 | Opens visual side-by-side diff editor        |
+| Status bar branch icon| git switch -c / git switch  | Switches or creates branches                 |
+| '...' -> Branch -> Merge| git merge <branch>         | Merges selected branch into current          |
++-----------------------+-----------------------------+----------------------------------------------+
