@@ -1,0 +1,29 @@
+=== Creating Uncommitted Working Changes ===
+$ echo "Draft notes for Section 6" >> README.md
+$ git status --short
+ M README.md
+
+=== Stashing Changes ===
+$ git stash push -m "WIP: Lab notes draft"
+Saved working directory and index state On main: WIP: Lab notes draft
+
+=== Verifying Clean Working Tree ===
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+=== Listing Stashes ===
+$ git stash list
+stash@{0}: On main: WIP: Lab notes draft
+
+=== Restoring Stashed Changes ===
+$ git stash pop
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.md
+
+=== Finalizing Stashed Work ===
+$ git add README.md
+$ git commit -m "Finalize lab notes after stash recovery"
