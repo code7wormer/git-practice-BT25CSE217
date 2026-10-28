@@ -1,0 +1,9 @@
+$ git init -b main
+Initialized empty Git repository in C:/Users/shard/Desktop/New folder/git-practice-BT25CSE217/.git/
+
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+$ git log --oneline
+a1b2c3d (HEAD -> main) Initialize project repository with README
