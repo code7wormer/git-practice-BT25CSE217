@@ -1,0 +1,20 @@
+=== Running Validation on Scripts ===
+$ ./greet.sh (Passed)
+$ ./menu.sh  (Passed)
+
+=== Creating Annotated Release Tag ===
+$ git tag -a v1.0 -m "Release version 1.0 - All lab exercises verified"
+
+=== Inspecting Tag with git show ===
+$ git show v1.0
+tag v1.0
+Tagger: Shardul Singh <shardulsingh.01@gmail.com>
+Date:   Wed Oct 28 17:00:00 2026 +0530
+
+Release version 1.0 - All lab exercises verified
+
+=== Pushing Tag to Remote ===
+$ git push origin v1.0
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/code7wormer/git-practice-BT25CSE217.git
+ * [new tag]         v1.0 -> v1.0
