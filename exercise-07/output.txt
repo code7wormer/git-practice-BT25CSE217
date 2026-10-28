@@ -1,0 +1,38 @@
+=== Menu Execution Transcript ===
+$ ./menu.sh
+==========================================
+        GIT LAB UTILITY MENU              
+==========================================
+1. Greet User
+2. Add Two Integers
+3. Check Even or Odd
+4. Exit
+------------------------------------------
+Select an option [1-4]: 1
+Enter user name: Shardul
+Hello, Shardul! Have a productive lab session.
+
+Select an option [1-4]: 2
+Enter first integer: 14
+Enter second integer: 28
+Result: 14 + 28 = 42
+
+Select an option [1-4]: 3
+Enter an integer to check: 17
+Result: 17 is an ODD number.
+
+Select an option [1-4]: 4
+Exiting Git Lab Menu. Goodbye!
+
+=== Branching & Merge Verification ===
+$ git switch -c feature/menu
+Switched to a new branch 'feature/menu'
+$ git commit -m "Implement interactive arithmetic and utility menu script"
+$ git switch main
+Switched to branch 'main'
+$ git merge feature/menu
+Updating d5e6f7a..e8f9a0b
+Fast-forward
+ menu.sh | 58 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 58 insertions(+)
+ create mode 100755 menu.sh

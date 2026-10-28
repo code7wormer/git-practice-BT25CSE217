@@ -1,0 +1,4 @@
+Option 1: Greet -> Shardul
+Option 2: Add integers -> 14, 28
+Option 3: Check even/odd -> 17
+Option 4: Exit
