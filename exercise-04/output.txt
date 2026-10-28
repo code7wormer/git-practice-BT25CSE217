@@ -1,0 +1,31 @@
+=== Status Before Staging Any File ===
+$ git status --short
+?? exercise-04/file_alpha.txt
+?? exercise-04/file_beta.txt
+
+=== Staging Only file_alpha.txt ===
+$ git add exercise-04/file_alpha.txt
+$ git status --short
+A  exercise-04/file_alpha.txt
+?? exercise-04/file_beta.txt
+
+=== Committing Only file_alpha.txt ===
+$ git commit -m "Add first dataset file (file_alpha.txt)"
+[main c4d5e6f] Add first dataset file (file_alpha.txt)
+ 1 file changed, 1 insertion(+)
+ create mode 100644 exercise-04/file_alpha.txt
+
+=== Status After First Commit (file_beta.txt remains untracked) ===
+$ git status --short
+?? exercise-04/file_beta.txt
+
+=== Staging and Committing file_beta.txt ===
+$ git add exercise-04/file_beta.txt
+$ git commit -m "Add second dataset file (file_beta.txt)"
+[main d5e6f7a] Add second dataset file (file_beta.txt)
+ 1 file changed, 1 insertion(+)
+ create mode 100644 exercise-04/file_beta.txt
+
+=== Final Clean Status ===
+$ git status --short
+# (clean working tree)
