@@ -1,0 +1,25 @@
+=== Demonstrating MM State (Staged and Unstaged Modifications) ===
+$ git status --short
+MM README.md
+
+$ git diff
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@ -45,3 +45,4 @@
++Session 2: Distributed Collaboration and Remote Repositories
+
+$ git diff --staged
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@ -42,3 +42,4 @@
++Session 1: Fundamental Git Architecture and Local Staging
+
+$ git diff HEAD
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@ -42,3 +42,5 @@
++Session 1: Fundamental Git Architecture and Local Staging
++Session 2: Distributed Collaboration and Remote Repositories
