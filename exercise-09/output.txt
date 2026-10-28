@@ -1,0 +1,31 @@
+=== Step 1: Triggering the Controlled Conflict ===
+$ git merge feature/mode
+Auto-merging mode.txt
+CONFLICT (content): Merge conflict in mode.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+=== Step 2: Content of mode.txt with Conflict Markers ===
+<<<<<<< HEAD
+Lab mode: classroom
+=======
+Lab mode: online
+>>>>>>> feature/mode
+
+=== Step 3: Conflict Status ===
+$ git status --short
+UU mode.txt
+
+=== Step 4: Resolving the Conflict ===
+# Decided agreed solution: Hybrid Mode
+$ echo "Lab mode: hybrid" > mode.txt
+$ git add mode.txt
+$ git commit -m "Resolve merge conflict in mode.txt with hybrid delivery mode"
+[main 7c8d9e0] Resolve merge conflict in mode.txt with hybrid delivery mode
+
+=== Step 5: Verification of Clean State ===
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+$ cat mode.txt
+Lab mode: hybrid
