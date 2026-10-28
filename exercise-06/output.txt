@@ -1,0 +1,16 @@
+=== Testing .gitignore Rules with git check-ignore ===
+$ git check-ignore -v app.log
+.gitignore:2:*.log      app.log
+
+$ git check-ignore -v temp_data.tmp
+.gitignore:5:*.tmp      temp_data.tmp
+
+$ git check-ignore -v build/output.bin
+.gitignore:8:build/     build/output.bin
+
+$ git check-ignore -v .env
+.gitignore:11:.env      .env
+
+=== Status Showing Untracked Files vs Ignored Files ===
+$ git status --short
+A  .gitignore
