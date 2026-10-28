@@ -1,0 +1,18 @@
+=== Original Commit Created ===
+Commit ID: 0d1dbb6
+Message: Add temporary experiment configuration
+
+=== Revert Commit Created ===
+$ git revert --no-edit HEAD
+[941efce] Revert "Add temporary experiment configuration"
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 temporary.txt
+
+=== Inspecting Git History ===
+$ git log -2 --oneline
+941efce Revert "Add temporary experiment configuration"
+0d1dbb6 Add temporary experiment configuration
+
+=== Verifying File Removal ===
+$ ls temporary.txt
+ls: cannot access 'temporary.txt': No such file or directory
