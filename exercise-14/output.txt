@@ -1,0 +1,15 @@
+=== Peer Collaborator Workflow ===
+$ git switch -c feature/contributor-guide
+$ git add CONTRIBUTING.md
+$ git commit -m "Add project contribution guidelines (CONTRIBUTING.md)"
+$ git push -u origin feature/contributor-guide
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/code7wormer/git-practice-BT25CSE217.git
+ * [new branch]      feature/contributor-guide -> feature/contributor-guide
+
+=== Pull Request Created on GitHub ===
+Title: Docs: Add project contribution guidelines
+Source: feature/contributor-guide
+Target: main
+Review Comment: "Documentation looks clear and follows team standards. Approved."
+Status: Merged into main
