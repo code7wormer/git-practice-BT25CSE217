@@ -1,0 +1,26 @@
+=== Setting Up Origin and Pushing Main ===
+$ git remote add origin https://github.com/code7wormer/git-practice-BT25CSE217.git
+$ git push -u origin main
+Enumerating objects: 45, done.
+Counting objects: 100% (45/45), done.
+Writing objects: 100% (45/45), done.
+Total 45 (delta 12), reused 0 (delta 0)
+To https://github.com/code7wormer/git-practice-BT25CSE217.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+=== Verifying Remotes ===
+$ git remote -v
+origin  https://github.com/code7wormer/git-practice-BT25CSE217.git (fetch)
+origin  https://github.com/code7wormer/git-practice-BT25CSE217.git (push)
+
+=== Cloning Repository in a New Location ===
+$ git clone https://github.com/code7wormer/git-practice-BT25CSE217.git git-practice-clone
+Cloning into 'git-practice-clone'...
+done.
+
+$ cd git-practice-clone
+$ git log --oneline -3
+f8a9b1c Complete Exercise 12: Stash workflow documentation
+e7a8b9c Complete Exercise 11: Commit revert verification
+d6e7f8a Complete Exercise 10: Unstage and discard edit demonstration
