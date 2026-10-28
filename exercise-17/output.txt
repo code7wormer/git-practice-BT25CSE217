@@ -1,0 +1,9 @@
+=== VS Code Visual Conflict Resolution Workflow ===
+1. When a merge conflict occurs, VS Code highlights the file in red under 'Merge Changes'.
+2. The editor offers inline action buttons:
+   - 'Accept Current Change' (keeps HEAD / local version)
+   - 'Accept Incoming Change' (takes remote / branch version)
+   - 'Accept Both Changes' (concatenates both blocks)
+   - 'Compare Changes' / 'Open in Merge Editor' (3-way side-by-side resolution view)
+3. For this lab, the agreed result 'Lab mode: hybrid' was entered, removing all conflict markers.
+4. The file was staged with '+' and committed cleanly.
