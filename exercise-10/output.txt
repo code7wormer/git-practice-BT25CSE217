@@ -1,0 +1,24 @@
+=== Modifying Tracked File and Staging ===
+$ echo "Temporary experimental note" >> README.md
+$ git add README.md
+$ git status --short
+M  README.md
+
+=== Unstaging Using git restore --staged ===
+$ git restore --staged README.md
+$ git status --short
+ M README.md
+
+=== Inspecting Working Tree Diff ===
+$ git diff
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@ -120,3 +120,4 @@
++Temporary experimental note
+
+=== Discarding Working Tree Edit Using git restore ===
+$ git restore README.md
+$ git status
+On branch main
+nothing to commit, working tree clean
