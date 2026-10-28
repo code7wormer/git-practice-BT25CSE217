@@ -1,0 +1,14 @@
+=== Test Run 1: Valid Name Input ===
+$ ./greet.sh
+Enter your name: Shardul
+Hello, Shardul! Welcome to Git Version Control Lab.
+
+=== Test Run 2: Empty Input (Validation Triggered) ===
+$ ./greet.sh
+Enter your name: 
+Error: Name cannot be empty! Please provide a valid name.
+
+=== Commit History for greet.sh ===
+$ git log --oneline -2 greet.sh
+3b8d1e2 Improve greet.sh with empty input validation
+8f4a2c1 Add greeting script to greet user by name
