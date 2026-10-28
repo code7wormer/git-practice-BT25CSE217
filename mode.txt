@@ -1,1 +1,1 @@
-Lab mode: pending
+Lab mode: online
