@@ -3,7 +3,7 @@
 **Student Name:** Shardul Singh  
 **Roll Number:** BT25CSE217  
 **Section:** CSE - C  
-**Course:** IT Workshop - I (CSP 201)  
+**Course:** IT Workshop - I 
 **Institution:** Indian Institute of Information Technology, Nagpur (IIITN)  
 **Semester:** Third Semester 2026–2027  
 **GitHub Repository:** [https://github.com/code7wormer/git-practice-BT25CSE217](https://github.com/code7wormer/git-practice-BT25CSE217)  
@@ -112,21 +112,3 @@ chmod +x menu.sh
 
 ---
 
-## 5. Commit History Summary
-Commit history is preserved with semantic, clear messages adhering to standard Git conventions:
-- `Initialize project repository with README`
-- `Add greeting script to greet user by name`
-- `Improve greet.sh with empty input validation`
-- `Add first dataset file (file_alpha.txt)`
-- `Add second dataset file (file_beta.txt)`
-- `Update documentation with lab session roadmap`
-- `Add .gitignore for logs, temp files, build artifacts, and env files`
-- `Implement interactive arithmetic and utility menu script`
-- `Add usage instructions and documentation for menu script`
-- `Add initial lab delivery mode`
-- `Resolve merge conflict in mode.txt with hybrid delivery mode`
-- `Add temporary experiment configuration`
-- `Revert "Add temporary experiment configuration"`
-- `Finalize lab notes after stash recovery`
-- `Add project contribution guidelines (CONTRIBUTING.md)`
-- `Release version 1.0 - All lab exercises verified`
