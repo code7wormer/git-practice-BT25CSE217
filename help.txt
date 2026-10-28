@@ -1,0 +1,17 @@
+GIT LAB UTILITY MENU - USER INSTRUCTIONS
+========================================
+Overview:
+The menu.sh script provides interactive CLI utilities for lab students.
+
+Usage:
+  ./menu.sh
+
+Options:
+  1. Greet User
+     - Prompts for name. If left blank, defaults to 'Student'.
+  2. Add Two Integers
+     - Accepts positive or negative integers and computes the arithmetic sum.
+  3. Check Even or Odd
+     - Evaluates number % 2 to verify numeric parity.
+  4. Exit
+     - Terminates the utility session.

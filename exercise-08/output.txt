@@ -1,0 +1,25 @@
+=== Branch Creation & Commit ===
+$ git switch -c feature/help
+Switched to a new branch 'feature/help'
+$ git add help.txt exercise-08/
+$ git commit -m "Add usage instructions and documentation for menu script"
+
+=== Fast-Forward Merge into Main ===
+$ git switch main
+Switched to branch 'main'
+$ git merge --ff-only feature/help
+Updating e8f9a0b..f9a0b1c
+Fast-forward
+ help.txt | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+ create mode 100644 help.txt
+
+=== Branch Deletion ===
+$ git branch -d feature/help
+Deleted branch feature/help (was f9a0b1c).
+
+=== Graph History Inspection ===
+$ git log --oneline --graph --all
+* f9a0b1c (HEAD -> main) Add usage instructions and documentation for menu script
+* e8f9a0b Implement interactive arithmetic and utility menu script
+* c4d5e6f Add .gitignore for logs, temp files, build artifacts, and env files
