@@ -1,0 +1,45 @@
+=== Challenge Scenario: Diverged Concurrent Commits ===
+Clone A and Clone B both branched from commit C0.
+Clone A commits C_A and pushes to origin/main.
+Clone B commits C_B and attempts to push to origin/main.
+
+=== Step 1: Push Rejection Encountered on Clone B ===
+$ git push origin main
+To https://github.com/code7wormer/git-practice-BT25CSE217.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/code7wormer/git-practice-BT25CSE217.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+=== Step 2: Fetch Remote Objects without Clobbering ===
+$ git fetch origin
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+From https://github.com/code7wormer/git-practice-BT25CSE217
+   c0a1b2c..a2b3c4d  main       -> origin/main
+
+=== Step 3: Inspect Divergence in Commit Graph ===
+$ git log --oneline --graph --all
+* a2b3c4d (origin/main) Independent commit from Clone A
+| * b3c4d5e (HEAD -> main) Independent commit from Clone B
+|/
+* c0a1b2c Common ancestor commit
+
+=== Step 4: Integrate Diverged Remote Work ===
+$ git merge origin/main
+Auto-merging shared_notes.txt
+Merge made by the 'ort' strategy.
+ shared_notes.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+
+=== Step 5: Successful Clean Push without --force ===
+$ git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Writing objects: 100% (7/7), done.
+Total 7 (delta 3), reused 0 (delta 0)
+To https://github.com/code7wormer/git-practice-BT25CSE217.git
+   a2b3c4d..f7e8d9c  main -> main
